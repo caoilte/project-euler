@@ -15,7 +15,11 @@ class Problem1Tests extends FunSuite with ShouldMatchers {
     Problem1Solver.multiplesOfThreeOrFiveBelow(10) should equal (List(3,5,6,9));
   }
 
-  test("sum of all the multiples of 3 or 5 below 10") {
+  test("sum of all the multiples of 3 or 5 below 10 should be 23") {
+    Problem1Solver(10) should equal (23)
+  }
 
+  test("print out sum of the multiples of 3 or 5 below 1000") {
+    System.out.println(Problem1Solver(1000))
   }
 }
